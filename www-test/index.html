@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Session Test</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p>This test will ensure that pollus/dataase-session-handler is working as expected. Remember to create the following table and setup the correct connection in constructor.php</p>
+<pre>
+    CREATE TABLE IF NOT EXISTS `sessions` (
+      `id` varchar(512) NOT NULL,
+      `session_data` MEDIUMBLOB NOT NULL,
+      `last_activity` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+      PRIMARY KEY (`id`)
+    );
+</pre>
+        <a href="test00.php">Begin test</a>
+    </body>
+</html>

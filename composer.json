@@ -1,0 +1,31 @@
+{
+    "name": "pollus/database-session-handler",
+    "description": "Flexible Database Session Handler",
+    "keywords": ["php", "database", "session"],
+    "license": "MIT",
+    "authors": 
+    [
+        {
+            "name": "Renan Cavalieri",
+            "email": "renan@tecdicas.com"
+        }
+    ],
+    "type": "library",
+    "require": 
+    {
+        "php": ">=7.2",
+        "pollus/improved-session": "^1.0.0"
+    },
+    "require-dev":
+    {
+        "pollus/fake-session": "^1.0.0",
+        "phpunit/phpunit": "^7.0.0"
+    },
+    "autoload": 
+    {
+        "psr-4": 
+        {
+            "Pollus\\DatabaseSessionHandler\\": "src/"
+        }
+    }
+}
